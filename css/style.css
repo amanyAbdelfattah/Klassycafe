@@ -1,0 +1,567 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.fixed
+{
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    height: 70px;
+    z-index: 2;
+    box-shadow: 0px 0 50px 0px rgba(80, 101, 142, 0.08);
+}
+header .menu-bar-container nav ul li a.active, header .menu-bar-container nav ul li a:hover
+{
+    color: #dc3545;
+    font-weight: bolder;
+}
+header .menu-bar-container
+{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+header .menu-bar-container .logo
+{
+    flex-basis: 20%;
+}
+header .menu-bar-container nav
+{
+    flex-basis: 80%;
+    display: block;
+    margin-top: 14px;
+}
+
+header .menu-bar-container nav ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    position: static;
+    background: none;
+    padding-top: 0;
+    width: 100%;
+}
+header .menu-bar-container nav ul li
+{
+    list-style: none;
+    margin: 0 30px 0 0;
+}
+header .menu-bar-container nav ul li a
+{
+    font-weight: bold;
+    text-decoration: none;
+    color: rgba(0,0,0,.55);;
+    font-size: 15px;
+}
+header .menu-bar-container .icons
+{
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    right: 5%;
+    z-index: 3;
+}
+.banner
+{
+    padding-bottom: 50px;
+}
+.banner .left-content
+{
+    background-image: url('../img/top-left-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 40vh;
+}
+.banner .col-12 .left-content .inner-content
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.banner .col-12 .left-content .inner-content h4
+{
+    font-family:fantasy;
+    color: #fff;
+    font-size: 40px;
+}
+.banner .col-12 .left-content .inner-content h6
+{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 3px;
+}
+.banner .col-12 .left-content .reservation-btn a
+{
+    font-size: 13px;
+    color: #fb5849;
+    background-color: #fff;
+    border-radius: 3px;
+    font-weight: 600;
+    transition: all .3s;
+    text-decoration: none;
+}
+.banner .container .row .col-12
+{
+    padding: 0;
+}
+.about
+{
+    padding: 50px 0;
+}
+.about .left-about-intro h6
+{
+    position: relative;
+    font-size: 15px;
+    color: #fb5849;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-left: 40px;
+}
+.about .left-about-intro h6::before
+{
+    width: 30px;
+    height: 1px;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    background-color: #fb5849;
+}
+.about .left-about-intro h2
+{
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #2a2a2a;
+}
+.about .col-4 img
+{
+    width: 100%;
+}
+.our-menu
+{
+    padding: 50px 0;
+}
+.our-menu .menu h6
+{
+    position: relative;
+    font-size: 15px;
+    color: #fb5849;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-left: 40px;
+}
+.our-menu .menu h6::before
+{
+    width: 30px;
+    height: 1px;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    background-color: #fb5849;
+}
+.our-menu .menu h2
+{
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #2a2a2a;
+}
+.our-menu .card .item-1
+{
+    background-image: url('../img/menu-item-01.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.our-menu .card .item-2
+{
+    background-image: url('../img/menu-item-02.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.our-menu .card .item-3
+{
+    background-image: url('../img/menu-item-03.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.our-menu .card .item-4
+{
+    background-image: url('../img/menu-item-04.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.our-menu .card .item-5
+{
+    background-image: url('../img/menu-item-05.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.our-menu .card .item-6
+{
+    background-image: url('../img/tab-item-01.png');
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    height: 100%;
+}
+.card
+{
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    position: relative;
+    transition: all 1.5s ease-in-out;
+    transform-style: preserve-3d
+}
+.card:hover
+{
+    transform: rotatex(180deg)
+}
+.card>div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fb5849;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: #601717
+}
+.card .sideone
+{
+    z-index: 2;
+    backface-visibility: hidden
+}
+.card .sidetwo
+{
+    z-index: 1;
+    transform: rotatex(180deg);
+    backface-visibility: hidden
+}
+.card .sidetwo
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fb5849;
+    border-radius: 10px;
+    border: 1px solid #601717;
+    color: black
+}
+.card .sidetwo h3
+{
+    line-height: 2;
+    text-align: center;
+    font-family: monospace;
+    font-weight: 600;
+    padding: 5px 0;
+}
+.card .sidetwo p
+{
+    padding: 5px 0 10px 0;
+}
+.card .sidetwo a
+{
+    background-color: #601717;
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid #601717;
+    border-radius: 10px;
+    padding: 6px;
+    margin: 10px 19px;
+}
+.our-chefs
+{
+    padding-bottom: 50px;
+}
+.our-chefs .row:last-of-type
+{
+    padding-right: 0;
+}
+.our-chefs .chefs h6
+{
+    font-size: 15px;
+    color: #fb5849;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-left: 40px;
+}
+.our-chefs .chefs h2
+{
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #2a2a2a;
+}
+.our-chefs .chef-item
+{
+    text-align: center;
+    border: 1px solid #afafaf;
+    padding: 5px;
+    transition: all .5s;
+    border-radius: 3px;
+}
+.our-chefs .chef-item .thumb
+{
+    position: relative;
+}
+.our-chefs .chef-item .thumb .overlay
+{
+    position: absolute;
+    background-color: #2a2a2a;
+    border-radius: 3px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+.our-chefs .chef-item .thumb .social-icons
+{
+    position: absolute;
+    z-index: 11;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    transition: all .5s;
+    opacity: 0;
+    visibility: hidden;
+} 
+.our-chefs .chef-item .thumb ul.social-icons li 
+{
+    display: inline-block;
+    margin: 0px 5px;
+}
+.our-chefs .chef-item:hover ul.social-icons {
+    opacity: 1;
+    visibility: visible;
+}
+.our-chefs .chef-item .thumb ul.social-icons li a
+{
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    color: #2a2a2a;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+    transition: all .5s;
+}
+.our-chefs .chef-item .thumb ul.social-icons li a:hover {
+    background-color: #fb5849;
+}
+.our-chefs .chef-item .thumb img
+{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.our-chefs .chef-item .about-chef
+{
+    padding: 20px 0px;
+}
+.our-chefs .chef-item .about-chef h4
+{
+    transition: all .3s;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2a2a2a;
+}
+.our-chefs .chef-item .about-chef span
+{
+    font-size: 14px;
+    color: #2a2a2a;
+}
+.our-chefs .chef-item:hover .overlay {
+    opacity: .9;
+    visibility: visible;
+}
+.our-chefs .chef-item:hover ul.social-icons {
+    opacity: 1;
+    visibility: visible;
+}
+.contact-us
+{
+    margin-top: 120px;
+    padding: 120px 0px;
+    background-image: url('../img/reservation-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact-us .contact-info .contact-heading h6
+{
+    color: white;
+    position: relative;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-left: 40px;
+}
+.contact-us .contact-info .contact-heading h6::before
+{
+    background-color: #fff;
+    width: 30px;
+    height: 1px;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
+.contact-us .contact-info .contact-heading h2
+{
+    color: #fff;
+    font-weight: 700;
+}
+.contact-us .contact-info p
+{
+    color: #fff;
+    margin-bottom: 65px;
+}
+form
+{
+    /* margin-left: 30px; */
+    padding: 45px 30px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+form h4
+{
+    font-weight: 700;
+    font-size: 30px;
+    color: #2a2a2a;
+    margin-bottom: 30px;
+}
+form input
+{
+    color: #2a2a2a;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    width: 100%;
+    height: 46px;
+    border-radius: 5px;
+    outline: none;
+    padding: 3px 20px 0 20px;
+    margin-bottom: 15px;
+}
+form .btn
+{
+    background-color: #fb5849;
+    color: white;
+}
+footer
+{
+    padding: 50px 0px;
+    background-color: #fb5849;
+}
+footer .social-icons
+{
+    padding-left: 0;
+}
+footer ul
+{
+    list-style: none;
+    text-align: center;
+}
+footer .social-icons li:first-child
+{
+    margin-left: 0;
+    display: inline-block;
+}
+footer .social-icons li:nth-child(2), footer .social-icons li:nth-child(3), footer .social-icons li:last-child
+{
+    display: inline-block;
+    margin-left: 15px;
+}
+footer .logo a
+{
+    text-decoration: none;
+}
+footer .right-text-content .social-icons li a
+{
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #fb5849;
+}
+footer p
+{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 18px
+}
+@media(min-width:576px)
+{
+    .banner .container
+    {
+        max-width: 100%;
+    }
+}
+@media(min-width:992px)
+{
+    .banner .container
+    {
+        max-width: 100%;
+    }
+    .navbar-expand-lg .navbar-collapse
+    {
+        justify-content: flex-end;
+    }
+    .banner .left-content
+    {
+        height: 50vh;
+    }
+}
+@media(min-width:1200px)
+{
+    .banner .left-content
+    {
+        height: 70vh;
+    }
+}
